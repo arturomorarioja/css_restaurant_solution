@@ -1,0 +1,120 @@
+@import 'variables.css';
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--fontMain);
+}
+
+header {
+    padding: 0 1rem;
+    color: var(--colorHeader);
+    background-color: var(--colorBgHeader); 
+    font-family: var(--fontList);
+    text-indent: 1rem;
+    line-height: 4rem;
+}
+
+ul {
+    padding: 0.5rem;
+}
+li {    
+    list-style-type: none;
+    line-height: 1.6rem;
+    font-family: var(--fontList);
+    font-weight: bold;
+    color: var(--colorList);
+}
+
+nav {
+    padding: 0 1rem;
+    color: var(--colorHeader);
+    background-color: var(--colorBgNav);
+    line-height: 2rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--colorBgNav);
+    font-weight: bold;
+}
+nav a {
+    color: var(--colorHeader);
+}
+a:hover {
+    font-size: 1.1rem;
+}
+
+nav li {
+    display: block;
+    text-align: center;
+    border-bottom: thin solid var(--colorHeader);
+    color: var(--colorHeader);
+    font-family: var(--fontNav);
+}
+nav li:nth-of-type(3) {
+    border-bottom: none;
+}
+@media only screen and (min-width: 480px) {
+    nav li {
+        display: inline;
+        padding-right: 1rem;
+        border-bottom: none;
+    }
+}
+nav a.selected {
+    color: var(--colorSelected);
+    font-size: 1.2em;
+}
+
+body > main {
+    padding: 0.5rem 1rem 1rem;
+    position: relative;
+    top: 0;
+}
+@media only screen and (min-width: 480px) {
+    body > main {
+        padding-bottom: 3rem;
+    }
+}
+
+body > footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 0.5rem 0;
+    color: var(--colorHeader);
+    background-color: var(--colorBgNav);
+    text-align: center;
+    font-size: 0.8rem;    
+}
+@media only screen and (min-width: 480px) {
+    body > footer {
+        position: fixed;
+    }
+}
+
+img {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+@media only screen and (min-width: 800px) {
+    main {
+        width: 95vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media only screen and (min-width: 900px) {
+    main {
+        width: 88vw;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    main {
+        width: 80vw;
+    }
+}

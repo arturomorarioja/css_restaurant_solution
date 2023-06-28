@@ -1,0 +1,27 @@
+@import 'styles.css';
+
+/*
+    Home page
+*/
+
+blockquote {
+    padding: 0.8rem;
+    clear: both;
+    background: var(--colorBgQuote);
+}
+blockquote > footer {
+    margin-top: 0.5rem;
+    text-indent: 2rem;
+}
+
+@media only screen and (min-width: 720px) {
+    blockquote {
+        margin: 0.5rem 0 0 1rem;    
+    }
+
+    img#home {
+        float: right; 
+        margin: 0 0 0.5rem 0.5rem;    
+        width: auto;
+    }
+}
