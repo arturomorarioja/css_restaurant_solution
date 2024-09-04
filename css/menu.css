@@ -34,11 +34,21 @@ p.price {
     text-align: right;
 }
 
+article > header {
+    line-height: 2rem;
+    border-radius: 0.5rem;
+    text-indent: 0;
+    text-align: center;    
+}
 img.menu {
     width: 100%;
     margin-bottom: 0.5rem;
 }
 @media only screen and (min-width: 600px) {
+    article > header {
+        text-align: left;
+        width: calc(100% - 320px - 3rem);
+    }
     img.menu {
         float: right;
         margin: 0 0 0 0.5rem;
