@@ -9,14 +9,14 @@ blockquote {
     clear: both;
     background: var(--colorBgQuote);
 }
-blockquote > footer {
+blockquote > p:last-of-type {
     margin-top: 0.5rem;
     text-indent: 2rem;
 }
 
 @media only screen and (min-width: 720px) {
     blockquote {
-        margin: 0.5rem 0 0 1rem;    
+        margin: 0.5rem 0 0 1rem;
     }
 
     img#home {
