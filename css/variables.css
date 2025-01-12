@@ -9,7 +9,19 @@
     --colorBgQuote: lightgrey;
     --colorBgArticle: lightgoldenrodyellow;
 
-    --fontMain: Arial, Helvetica, sans-serif;
-    --fontNav: Verdana, Geneva, Tahoma, sans-serif;
-    --fontList: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* 
+        System fonts grouped from https://modernfontstacks.com/ 
+    */
+
+    /* Neo-Grotesque */
+    --fontMain: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
+
+    /* Handwritten */
+    --fontTitle: 'Segoe Print', 'Bradley Hand', Chilanka, TSCu_Comic, casual, cursive;
+
+    /* Industrial */
+    --fontNav: Bahnschrift, 'DIN Alternate', 'Franklin Gothic Medium', 'Nimbus Sans Narrow', sans-serif-condensed, sans-serif;
+
+    /* Geometric Humanist */
+    --fontList: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
 }

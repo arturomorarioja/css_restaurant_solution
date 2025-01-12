@@ -11,27 +11,28 @@ article.dish {
     overflow: auto;
     background-color: var(--colorBgArticle);
     vertical-align: top;
+    > h2 {
+        font-size: 1.2rem;
+    }
 }
 
-article.dish > h2 {
-    font-size: 1.2rem;
-}
-
-p.menuItem {
-    margin-top: 0.5rem;
-}
-p.price {
-    position: relative;
-    right: 0;
-    display: inline-block;
-    margin-top: 0.5rem;
-    padding: 0.25rem 0.5rem;
-    border: thick solid var(--colorBgNav);
-    border-radius: 0.5rem;
-    color: var(--colorPrice);
-    background-color: var(--colorList);
-    font-weight: bold;
-    text-align: right;
+p {
+    &.menuItem {
+        margin-top: 0.5rem;
+    }
+    &.price {
+        position: relative;
+        right: 0;
+        display: inline-block;
+        margin-top: 0.5rem;
+        padding: 0.25rem 0.5rem;
+        border: thick solid var(--colorBgNav);
+        border-radius: 0.5rem;
+        color: var(--colorPrice);
+        background-color: var(--colorList);
+        font-weight: bold;
+        text-align: right;
+    }
 }
 
 article > header {
@@ -39,17 +40,15 @@ article > header {
     border-radius: 0.5rem;
     text-indent: 0;
     text-align: center;    
+    @media only screen and (min-width: 600px) {
+        text-align: left;
+        width: calc(100% - 320px - 3rem);
+    }
 }
 img.menu {
     width: 100%;
     margin-bottom: 0.5rem;
-}
-@media only screen and (min-width: 600px) {
-    article > header {
-        text-align: left;
-        width: calc(100% - 320px - 3rem);
-    }
-    img.menu {
+    @media only screen and (min-width: 600px) {
         float: right;
         margin: 0 0 0 0.5rem;
         width: auto;
