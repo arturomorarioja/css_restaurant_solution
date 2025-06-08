@@ -1,4 +1,4 @@
-# KEA Restaurant
+# CSS Restaurant
 
 ## Constraints
 As a challenge, responsiveness is enforced using only basic CSS (float and media queries, neither Flexbox nor Grid) and no JavaScript.
