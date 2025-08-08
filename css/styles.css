@@ -30,7 +30,7 @@ body {
     
     a {
         text-decoration: none;
-        color: var(--colorBgNav);
+        color: var(--colorLink);
         font-weight: bold;
         &:hover {
             font-size: 1.1rem;

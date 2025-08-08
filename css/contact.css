@@ -81,9 +81,11 @@ form {
         display: block;
         width: auto;
         margin: 0.5rem 0 0 1rem;
-        padding: 0.25rem 0.5rem;
-        border: thin solid var(--colorMain);
-        border-radius: 0.5rem;
+        padding: 0.25rem 1.5rem;
+        border: thin solid var(--colorBgHeader);
+        border-radius: 1rem;
         font-size: 1.2rem;
+        color: var(--colorBgHeader);
+        background-color: var(--colorHeader);        
     }
 }
